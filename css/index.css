@@ -1,0 +1,9 @@
+/* Selecciona las imágenes en la página principal */
+.main-products>article, .secondary-products>article {
+    transition: transform 0.18s ease-in-out;
+  }
+  
+  /* Aplica el efecto hover */
+  .main-products>article:hover, .secondary-products>article:hover {
+    transform: scale(1.05);
+  }

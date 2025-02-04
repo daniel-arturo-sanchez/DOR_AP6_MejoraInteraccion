@@ -287,3 +287,12 @@ main {
         }
     }
 }
+/* Selecciona las imágenes dentro del catálogo */
+.main-container .element {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Aplica el efecto hover */
+  .main-container .element:hover {
+    transform: scale(1.1);
+  }
