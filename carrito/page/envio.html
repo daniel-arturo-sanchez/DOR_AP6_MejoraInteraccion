@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos del Cliente</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/envio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Datos del Cliente</h1>
+    <section>
+        <ul>
+            <li class="nav-cart"><a href="../index.html">Carrito > </a></li>
+            <li class="nav-cart" ><span>Datos de Cliente > </span></li>
+            <li class="nav-cart" aria-label="datos de pago"><span>Pago > </span></li>
+            <li class="nav-cart" aria-label="Confirmación de Pedido"><span>Confirmación</span></li>
+        </ul>
+    </section>
+    <form action="pago.html" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Za-z]{2,20}" placeholder="Introduzca su nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" pattern="[A-Za-z]{2,20}" placeholder="Introduzca su apellido" required>
+            <label for="dni-nie">DNI/NIE:</label>
+            <input type="text" id="dni-nie" name="dni-nie" pattern="\d{3,10}[A-Za-z]" placeholder="1234657P" required>
+        </fieldset>
+        <fieldset>
+            <legend id="datos-de-envio">Datos de Envío</legend>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Calle Tres, Nº 1"required>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" placeholder="Santa Cruz de Tenerife" required>
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" placeholder="Tenerife"required>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" placeholder="España"required>
+            <label for="codigo_postal">Código Postal:</label>
+            <input type="tel" id="codigo_postal" name="codigo_postal"placeholder="00000" pattern="\d{5}" required>
+        </fieldset>
+
+        <fieldset>
+            <legend id="datos-de-facturacion">Datos de Facturación</legend>
+            <div class="fact-checkbox">
+                <input type="checkbox" name="datos-facturacion" id="datos-facturacion"/>
+                <label for="datos-facturacion">Utilizar datos personales para la facturación</label>
+            </div>
+            <div id="fact-input">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="fact-nombre" name="fact-nombre" pattern="[A-Za-z]{2,20}" placeholder="Introduzca su nombre"required>
+                <label for="fact-apellido">Apellido:</label>
+                <input type="text" id="fact-apellido" name="fact-apellido"pattern="[A-Za-z]{2,20}"placeholder="Introduzca su apellido" required>
+                <label for="fact-dni-nie">DNI/NIE:</label>
+                <input type="text" id="fact-dni-nie" name="fact-dni-nie" pattern="\d{3,10}[A-Za-z]" placeholder="1234657P"required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend id="datos-de-contacto">Datos de Contacto</legend>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="000000000" pattern="\d{9}" required>
+        </fieldset>
+        <fieldset>
+            <legend>Zonas de Envío</legend>
+            <div class="envio">
+                <div>
+                    <input type="radio" name="envio" id="peninsula" value="peninsula" required>
+                    <label for="peninsula">Península</label>
+                </div>
+                <div>
+                    <input type="radio" name="envio" id="canarias" value="canarias" required>
+                    <label for="canarias">Canarias</label>
+                </div>
+                <div>
+                    <input type="radio" name="envio" id="baleares" value="baleares" required>
+                    <label for="baleares">Baleares</label>
+                </div>
+            </div>            
+        </fieldset>
+        <fieldset disabled="disabled" id="metodos-envio">
+            <legend>Métodos de Envío</legend>
+            <div class="envio">
+                <div>
+                    <input type="radio" name="metodo-envio" id="aire" value="aire" disabled required>
+                    <label for="aire">Aéreo</label>
+                </div>
+                <div>
+                    <input type="radio" name="metodo-envio" id="mar" value="mar" disabled required>
+                    <label for="mar">Marítimo</label>
+                </div>
+                <div>
+                    <input type="radio" name="metodo-envio" id="tierra" value="tierra" disabled required>
+                    <label for="tierra">Terrestre</label>
+                </div>
+        </fieldset>
+        
+        <div>
+            <a href="../index.html"><button type="button" aria-label="Volver al carrito">Atrás</button></a>
+            <button aria-label="Continuar con la compra" type="submit">Continuar</button>
+        </div>
+    </form>
+    <script type="module" src="../js/envio.js"></script>
+</body>
+</html>

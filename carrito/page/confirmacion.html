@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación del Pedido</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/confirmacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Confirmación del Pedido</h1>
+        <section class="nav-cart">
+            <ul>
+                <li class="nav-cart"><a href="../index.html">Carrito > </a></li>
+                <li class="nav-cart"><a href="envio.html">Datos de Cliente > </a></li>
+                <li class="nav-cart"aria-label="datos de pago"><a href="pago.html">Pago > </a></li>
+                <li class="nav-cart" aria-label="Confirmación de Pedido"><span>Confirmación</span></li>
+            </ul>
+        </section>
+        <section id="summary" class="summary">
+            <h2>Resumen del pedido</h2>  
+            <ul class="summary-list">
+                <li>Carrito</li>
+                <ul id="cart">
+                    <!-- carrito -->
+                </ul>
+                <li>Datos del Cliente</li>
+                <ul id="customer-info">
+                    <!-- datos del cliente -->
+                </ul>
+                <li>Descuentos y pago</li>
+                <ul id="payment-info">
+                    <!-- descuentos y pago -->
+                </ul>
+                <li><a href="envio.html#datos-de-envio">Datos de Envío</a></li>
+                <ul id="datos-envio">
+                    <!-- datos de envio -->
+                </ul>
+                <li><a href="envio.html#datos-de-facturacion">Datos de Facturación</a></li>
+                <ul id="datos-fact"></ul>
+                <!-- datos de facturacion -->
+                <li><a href="envio.html#datos-de-contacto">Datos de Contacto</a></li>
+                <ul id="datos-contacto">
+                    <!-- datos de contacto -->
+                </ul>
+                <li><a href="pago.html#metodos-de-pago">Métodos de Pago</a></li>
+                <ul id="metodos-pago">
+                    <!-- metodos de pago -->
+            </ul>  
+            <button id="confirm-button">Confirmar</button>
+        </section>
+        <p id="success-message">Gracias por su compra. Su pedido ha sido confirmado.</p>
+    </main>
+    <script type="module" src="../js/confirmacion.js"></script>
+</body>
+</html>

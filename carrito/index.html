@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Carrito de Compras</h1>
+        <section>
+            <ul>
+                <li class="nav-cart"><span>Carrito > </span></li>
+                <li class="nav-cart"><span>Datos de Cliente > </span></li>
+                <li class="nav-cart" aria-label="datos de pago"><span>Pago > </span></li>
+                <li class="nav-cart" aria-label="Confirmación de Pedido"><span>Confirmación</span></li>
+            </ul>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selección</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario (€)</th>
+                    <th>Importe (€)</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody id="cart">
+                <tr id="product1">
+                    <td><input type="checkbox" name="product1" checked></td>
+                    <td><img src="images/1.jpg" alt="Producto 1"></td>
+                    <td>Bebida Refrescante</td>
+                    <td>
+                        <div class="quantity-cell">
+                            <button class="decrease-btn">-</button>
+                            <input type="number" min="0" max="10" value="2"/>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </td>
+                    <td>10.00</td>
+                    <td></td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr id="product2">
+                    <td><input type="checkbox" name="product2" checked></td>
+                    <td><img src="images/2.jpg" alt="Producto 2"></td>
+                    <td>Zapatos de tacón largo</td>
+                    <td>
+                        <div class="quantity-cell">
+                            <button class="decrease-btn">-</button>
+                            <input type="number" min="0" max="10" value="3"/>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </td>
+                    <td>25.00</td>
+                    <td></td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr id="product3">
+                    <td><input type="checkbox" name="product3"></td>
+                    <td><img src="images/3.jpg" alt="Producto 3"></td>
+                    <td>Teléfono móvil de última generación</td>
+                    <td>
+                        <div class="quantity-cell">
+                            <button class="decrease-btn">-</button>
+                            <input type="number" min="0" max="10" value="2"/>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </td>
+                    <td>30.00</td>
+                    <td></td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr id="product4">
+                    <td><input type="checkbox" name="product4"></td>
+                    <td><img src="images/4.jpg" alt="Producto 4"></td>
+                    <td>Zapatos de vestir</td>
+                    <td>
+                        <div class="quantity-cell">
+                            <button class="decrease-btn">-</button>
+                            <input type="number" min="0" max="10" value="1"/>
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </td>
+                    <td>40.00</td>
+                    <td></td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr id="product5">
+                    <td><input type="checkbox" name="product5" disabled></td>
+                    <td class="image-container"><img src="images/5.jpg" alt="Producto 5">
+                        <div class="centered-text">Fuera de Stock</div>
+                    </td>
+                    <td>Maquillaje <span>(No Disponible)</span></td>
+                    <td>
+                        <div class="quantity-cell">
+                            <button class="decrease-btn" disabled>-</button>
+                            <input type="number" min="0" max="10" disabled value="2"/>
+                            <button class="increase-btn" disabled>+</button>
+                        </div>
+                    </td>
+                    <td>35.00</td>
+                    <td></td>
+                    <td><button class="remove-btn" disabled>X</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <section class="total-summary">
+            <p>Sub-total: <span id="sub-total">0</span> €</p>
+            <p>IGIC 7%: <span id="igic">0</span> €</p>
+            <hr/>
+            <p>Total: <span id="total-amount">0</span> €</p>
+        </section>
+        <form id="my-form" action="page/envio.html" method="get">
+            <!-- Aquí se mostrarán los productos en el carrito -->
+            <button aria-label="Continuar con la compra" type="submit">Continuar</button>
+        </form>
+    </main>
+    <script src="js/cart.js"></script>
+</body>
+</html>

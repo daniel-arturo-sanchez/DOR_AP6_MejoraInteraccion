@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Pago</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pago.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Información de Pago</h1>
+    <section>
+        <ul>
+            <li class="nav-cart"><a href="../index.html">Carrito > </a></li>
+            <li class="nav-cart"><a href="envio.html">Datos de Cliente > </a></li>
+            <li class="nav-cart" aria-label="datos de pago"><span>Pago > </span></li>
+            <li class="nav-cart" aria-label="Confirmación de Pedido"><span>Confirmación</span></li>
+        </ul>
+    </section>
+    <form action="confirmacion.html" method="get">
+        <label for="descuento">Código de Descuento</label>
+        <input type="text" id="descuento" name="descuento" placeholder="Introduzca su código de descuento">
+        <p id="validate-code-message"></p>
+        <button id="validar-code">Validar Código</button>
+        <fieldset>
+            <legend id="metodos-de-pago">Forma de Pago</legend>
+            <div class="payment-method">
+                <div>
+                    <input type="radio" id="tarjeta" name="payment" value="tarjeta" required>
+                    <label for="tarjeta">Tarjeta</label>
+                </div>
+                <div>
+                    <input type="radio" id="paypal" name="payment" value="paypal" required>
+                    <label for="paypal">Paypal</label>
+                </div>
+                <div>
+                    <input type="radio" id="transferencia" name="payment" value="transferencia" required>
+                    <label for="transferencia">Transferencia Bancaria</label>
+                </div>
+            </div>
+            <fieldset >
+                <legend>Tarjeta</legend>
+                    <label for="card-name">Titular de la tarjeta:</label>
+                    <input type="text" id="card-name" name="card-name" pattern="[A-Za-z]{2,20}" disabled placeholder="Nombre del titular de la tarjeta" required>
+                    <label for="tarjeta">Número de Tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="tarjeta" placeholder="1234567891234567" pattern="\d{16}" disabled required>
+                    <label for="fecha_expiracion">Fecha de Expiración:</label>
+                    <input type="text" id="fecha_expiracion" name="fecha_expiracion" pattern="^(0[1-9]|1[0-2])\/\d{2}$" disabled placeholder="MM/YY" required>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" pattern="\d{3}" placeholder="XXX" disabled required>
+            </fieldset>
+            <fieldset>
+                <legend>PayPal</legend>
+                <input type="email" id="paypal-email" name="paypal-email" placeholder="ejemplo@ejemplo.com" disabled required>
+            </fieldset>
+            <fieldset>
+                <legend>Transferencia Bancaria</legend>
+                <input name="bank-transfer" type="file" accept="application/pdf" id="bank-transfer" disabled required>
+                
+            </fieldset>
+        </fieldset>
+        
+        <div class="buttons">
+            <a href="envio.html"><button type="button" aria-label="Volver a datos del cliente">Atrás</button></a>
+            <button type="submit">Confirmar Pedido</button>
+        </div>
+    </form>
+    <script type="module" src="../js/pago.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+ul{
+    list-style: none;
+}
+
+.main-container {
+    gap: 1em;
+    h2,h3, ul{
+        margin: 1em;
+    }
+    p {
+        text-align: justify;
+        padding: 0 1.5em;
+    }
+    video {
+        align-self: center;
+        width: 80%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    a {
+        font-size: 0.7em;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+    img {
+        width: 20%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+a.youtube {
+    font-size: 0.9em;
+}
+
+.team {
+    display: flex;
+}
+
+.team p {
+    text-align: justify;
+    align-content: center;
+}
+
+
+.team-list>h3:nth-of-type(even){
+    text-align: right;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <title>Happy Easter - E-Shop</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/happy_easter_logo.png" alt="happy easter logo" />
+        <p class="nombre-tienda">Happy E-Shop</p>
+        <a href="#">Contacto</a>
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+            Login
+        </a>
+        <!-- <label for="theme">Modo Oscuro</label> -->
+        <div class="accesibilidad">
+            <div>
+                <button id="aumentar" aria-label="Aumentar tamaño de letra">A+</button>
+                <button id="reset" aria-label="Reestablecer tamaño de letra">Reset</button>
+                <button id="disminuir" aria-label="Disminuir tamaño de letra">A-</button>
+            </div>
+            <div class="theme-selector">
+                <label for="switch-theme"></label>
+                <input id="switch-theme" type="checkbox" aria-label="Switch theme"/>
+                <a id="theme">
+                    <svg enable-background="new 0 0 512 512" height="2em" id="dark-theme-moon" version="1.1"
+                        viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M349.852,343.15c-49.875,49.916-131.083,49.916-181,0c-49.916-49.918-49.916-131.125,0-181.021  c13.209-13.187,29.312-23.25,47.832-29.812c5.834-2.042,12.293-0.562,16.625,3.792c4.376,4.375,5.855,10.833,3.793,16.625  c-12.542,35.375-4,73.666,22.25,99.917c26.209,26.228,64.5,34.75,99.916,22.25c5.792-2.062,12.271-0.582,16.625,3.793  c4.376,4.332,5.834,10.812,3.771,16.625C373.143,313.838,363.06,329.941,349.852,343.15z M191.477,184.754  c-37.438,37.438-37.438,98.354,0,135.771c40,40.021,108.125,36.416,143-8.168c-35.959,2.25-71.375-10.729-97.75-37.084  c-26.375-26.354-39.333-61.771-37.084-97.729C196.769,179.796,194.039,182.192,191.477,184.754z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="outer-container">
+        <nav>
+            <ul class="navbar">
+                <li><a href="./catalogo/index.html">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Suscríbete</a></li>
+                <li><a href="empresa/index.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <ul>
+                <li><a href="#">Financiación</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li><a href="#">Últimas unidades</a></li>
+                <li><a href="#">Ver más</a></li>
+            </ul>
+        </aside>
+        <main class="main-container">
+            <h1>Catálogo de Productos</h1>
+            <div class="main-products">
+                <article>
+                    <a href="#"><img src="./images/sample.jpg" alt="Main product 1" />
+                        <h2 class="productos-principales">Producto 1</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="#"><img src="./images/sample.jpg" alt="Main product 2" />
+                        <h2 class="productos-principales">Producto 2</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="#"><img src="./images/sample.jpg" alt="Main product 3" />
+                        <h2 class="productos-principales">Producto 3</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="#"><img src="./images/sample.jpg" alt="Main product 4" />
+                        <h2 class="productos-principales">Producto 4</h2>
+                    </a>
+                </article>
+            </div>
+            <div class="secondary-products">
+                <article>
+                    <a href="#">
+                        <img src="./images/tiny_flower.jpg" alt="Secondary product 5" />
+                        <h2 class="productos-secundarios">Producto 5</h2>
+                    </a>
+                </article>
+                <article>
+                    <a href="#"><img src="./images/tiny_flower.jpg" alt="Secondary product 6" />
+                        <h2 class="productos-secundarios">Producto 6</h2>
+                    </a>
+                </article>
+                <article><a href="#"><img src="./images/tiny_flower.jpg" alt="Secondary product 7" />
+                        <h2 class="productos-secundarios">Producto 7</h2>
+                    </a></article>
+                <article><a href="#"><img src="./images/tiny_flower.jpg" alt="Secondary product 8" />
+                        <h2 class="productos-secundarios">Producto 8</h2>
+                    </a></article>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <p class="footer-header">Reglamentos</p>
+            <ul>
+                <li><a href="#">Condiciones de contratación</a></li>
+                <li><a href="#">Condiciones de uso web</a></li>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Configurar cookies</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-header">Ayuda</p>
+            <ul>
+                <li><a href="#">Cómo comprar</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Devoluciones</a></li>
+                <li><a href="#">Bases promocionales</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer-header">Coorporación</p>
+            <ul>
+                <li><a href="empresa/index.html">Quiénes somos</a></li>
+                <li><a href="empresa/index.html">Misión</a></li>
+                <li><a href="empresa/index.html">Visión y valores</a></li>
+                <li><a href="#">Responsabilidad social corporativa</a></li>
+                <li><a href="#">Tiendas</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

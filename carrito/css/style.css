@@ -1,0 +1,126 @@
+/* styles.css */
+body {
+    font-family: 'Rubik',Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #aeaeaf;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #aeaeaf;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+button:focus {
+    outline: 2px solid #003d80;
+    outline-offset: 2px;
+}
+
+button[type=button] {
+    background-color: #c9ced3;
+    color: rgb(31, 30, 30);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type=button]:hover {
+    background-color: #8a8d91;
+}
+
+button[type=button]:focus {
+    outline: 2px solid #414346;
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+}
+
+p {
+    text-align: center;
+}
+
+section ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    gap:1em;
+    span{
+        color:lightgray
+    }
+    a{
+        color: black;
+    }
+    font-size: 1.2em;
+}
+
+form>div{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex: row;
+}

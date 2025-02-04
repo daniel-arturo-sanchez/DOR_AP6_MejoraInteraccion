@@ -1,0 +1,39 @@
+/* section ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    gap:1em;
+    span{
+        color:lightgray
+    }
+    a{
+        color: black;
+    }
+    font-size: 1.2em;
+} */
+
+li:nth-of-type(3)>span{
+    font-weight: bold;
+    color: black;
+}
+
+div.payment-method, .payment-method div{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+    input[type="text"]{
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #000;
+    }
+    input[type="submit"]{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+input:disabled + label {
+    color: gray;
+}
